@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post | Vyntra</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/feed.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <a class="brand" href="index.html">Vyntra<span>.</span></a>
+
+        <nav class="nav">
+            <a href="index.html">⌂ Home</a>
+            <a href="index.html">⌕ Explore</a>
+            <a class="active" href="post.html">＋ Create Post</a>
+            <a href="profile.html">◉ Profile</a>
+        </nav>
+
+        <button class="nav-logout" id="logoutBtn">Logout</button>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <h1>Create a Post</h1>
+        </header>
+
+        <div class="create-card">
+
+            <form id="createPostForm">
+
+                <label>Image URL</label>
+                <input
+                    type="url"
+                    id="imageUrl"
+                    placeholder="Enter image URL"
+                    required
+                >
+
+                <img id="imagePreview" class="image-preview hidden" alt="Preview">
+
+                <label>Caption</label>
+                <textarea
+                    id="caption"
+                    placeholder="Write something about your post..."
+                    rows="5"
+                ></textarea>
+
+                <button type="submit" class="primary-button">
+                    Share Post
+                </button>
+
+                <p id="postMessage"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/post.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyntra | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/feed.css">
+</head>
+
+<body>
+
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+<div class="ambient ambient-three"></div>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <a class="brand" href="index.html">
+            Vyntra<span>.</span>
+            <small>✨ your little world</small>
+        </a>
+
+        <div class="sidebar-label">MENU</div>
+
+        <nav class="nav">
+            <a class="active" href="index.html">
+                <span class="nav-icon">⌂</span>
+                <span>Home</span>
+            </a>
+
+            <a href="#" id="exploreNav">
+                <span class="nav-icon">🔍</span>
+                <span>Explore</span>
+            </a>
+
+            <a href="post.html">
+                <span class="nav-icon">➕</span>
+                <span>Create Post</span>
+            </a>
+
+            <a href="#" id="spotlightNav">
+                <span class="nav-icon">✦</span>
+                <span>Spotlight</span>
+            </a>
+
+            <a id="myProfileLink" href="profile.html">
+                <span class="nav-icon">👤</span>
+                <span>Profile</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-note">
+            <div class="note-decoration">🦋</div>
+            <h3>Spread some love!</h3>
+            <p>Share your moments and make someone's day brighter.</p>
+            <span>Made with 💜 on Vyntra</span>
+        </div>
+
+        <button class="nav-logout" id="logoutBtn">
+            ↪ Logout
+        </button>
+
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div class="page-heading">
+                <span class="heading-eyebrow">HELLO, BEAUTIFUL SOUL ✨</span>
+                <h1 id="sectionHeading">Home Feed <span>💜</span></h1>
+                <p class="heading-subtitle">Your daily dose of inspiration and connection.</p>
+            </div>
+
+            <div class="search-wrapper">
+                <span>🔍</span>
+                <input
+                    type="search"
+                    id="userSearch"
+                    placeholder="Search your people..."
+                    autocomplete="off"
+                >
+            </div>
+
+        </header>
+
+        <div class="welcome-banner">
+
+            <div class="banner-sparkle sparkle-one">✦</div>
+            <div class="banner-sparkle sparkle-two">✧</div>
+            <div class="banner-sparkle sparkle-three">♡</div>
+
+            <div class="banner-content">
+                <span class="welcome-pill">✧ A LITTLE SPACE JUST FOR YOU ✧</span>
+
+                <p class="welcome-small">YOUR SPACE. YOUR STORIES.</p>
+
+                <h2>Welcome to your Vyntra world! <span>💜</span></h2>
+
+                <p>Capture moments, share happiness and connect with your favourite people.</p>
+
+                <div class="banner-tags">
+                    <span>🌸 Be yourself</span>
+                    <span>🦋 Share moments</span>
+                    <span>✨ Spread happiness</span>
+                </div>
+            </div>
+
+            <div class="banner-art">
+                <div class="banner-circle circle-one"></div>
+                <div class="banner-circle circle-two"></div>
+                <div class="banner-emoji">💜</div>
+                <span class="floating-emoji emoji-one">🌷</span>
+                <span class="floating-emoji emoji-two">✨</span>
+                <span class="floating-emoji emoji-three">🦋</span>
+                <span class="floating-emoji emoji-four">♡</span>
+            </div>
+
+            <a href="post.html" class="banner-button">
+                <span>＋</span> Create a Post
+            </a>
+
+        </div>
+
+        <div class="feed-intro">
+            <div>
+                <span class="section-eyebrow">YOUR COMMUNITY</span>
+                <h2>Moments from your people 🌷</h2>
+                <p>Little moments make beautiful memories.</p>
+            </div>
+            <div class="intro-decoration">✿ ✧ ♡</div>
+        </div>
+
+        <div id="searchResults" class="hidden"></div>
+
+        <section id="feedSection">
+
+            <div class="section-title-row">
+                <h2>People you follow <span>💗</span></h2>
+                <span class="section-caption">Made with moments</span>
+            </div>
+
+            <div id="feedPosts" class="post-grid"></div>
+
+        </section>
+
+        <section id="exploreSection" class="hidden">
+
+            <div class="section-title-row">
+                <h2>Explore Vyntra <span>🌈</span></h2>
+                <span class="section-caption">Discover something lovely</span>
+            </div>
+
+            <div id="explorePosts" class="post-grid"></div>
+
+        </section>
+
+        <section id="spotlightSection" class="hidden">
+
+            <div class="section-title-row">
+                <h2>✦ Vyntra Spotlight <span>⭐</span></h2>
+                <span class="section-caption">Popular moments</span>
+            </div>
+
+            <div id="spotlightPosts" class="post-grid"></div>
+
+        </section>
+
+        <footer class="page-footer">
+            <span>Made with 💜</span>
+            <span>Keep shining, keep sharing ✨</span>
+            <span>© Vyntra</span>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/likes.js"></script>
+<script src="js/comments.js"></script>
+<script src="js/feed.js"></script>
+
+</body>
+</html>

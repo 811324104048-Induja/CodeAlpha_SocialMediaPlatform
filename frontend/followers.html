@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Followers | Vyntra</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <a class="brand" href="index.html">Vyntra<span>.</span></a>
+
+        <nav class="nav">
+            <a href="index.html">⌂ Home</a>
+            <a href="post.html">＋ Create Post</a>
+            <a href="profile.html">◉ Profile</a>
+        </nav>
+
+        <button class="nav-logout" id="logoutBtn">Logout</button>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <h1 id="listTitle">Followers</h1>
+        </header>
+
+        <div id="peopleList" class="people-list">
+            Loading...
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/follow.js"></script>
+
+</body>
+</html>
