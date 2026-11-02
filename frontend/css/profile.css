@@ -1,0 +1,148 @@
+
+.profile-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 35px;
+    background:
+        linear-gradient(120deg, #FFFFFF 45%, #F1E7FF);
+    border: 1px solid #E9DDF7;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(85,38,154,0.08);
+}
+
+.profile-avatar {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 4px;
+    background: linear-gradient(135deg, #8050D9, #D2B7FF);
+    border: 3px solid white;
+}
+
+.profile-main {
+    flex: 1;
+    min-width: 220px;
+}
+
+.profile-main h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 27px;
+    color: #392052;
+}
+
+.profile-handle {
+    color: #987BB5;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.profile-bio {
+    margin-top: 13px;
+    color: #6F5D81;
+    line-height: 1.6;
+}
+
+.profile-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 23px 0;
+}
+
+.profile-stats span,
+.profile-stats a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #8A779C;
+    font-size: 13px;
+}
+
+.profile-stats strong {
+    color: #5A2C9C;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.profile-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.profile-posts-section {
+    margin-top: 35px;
+}
+
+.profile-posts-section h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 23px;
+    color: #4E2C7A;
+    margin-bottom: 20px;
+}
+
+.people-list {
+    display: grid;
+    gap: 15px;
+    max-width: 750px;
+}
+
+.person-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    background: white;
+    border: 1px solid #EDE5F7;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(85,38,154,0.05);
+    transition: 0.25s ease;
+}
+
+.person-row:hover {
+    transform: translateX(5px);
+    background: #FAF7FF;
+}
+
+.person-row img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgba(42,20,68,0.5);
+    backdrop-filter: blur(6px);
+}
+
+.edit-form {
+    width: 100%;
+    max-width: 460px;
+    padding: 30px;
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.edit-form h2 {
+    color: #55269A;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 20px;
+}
+
+.edit-form label {
+    display: block;
+    color: #614779;
+    font-weight: 700;
+}
