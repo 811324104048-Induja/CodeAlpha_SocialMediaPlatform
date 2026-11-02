@@ -1,0 +1,113 @@
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background:
+        radial-gradient(circle at 15% 15%, #DCC5FF, transparent 35%),
+        radial-gradient(circle at 85% 85%, #CBB0FA, transparent 35%),
+        linear-gradient(135deg, #F8F3FF, #E9DDFB);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 45px 42px;
+    text-align: center;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.9);
+    border-radius: 26px;
+    box-shadow: 0 25px 70px rgba(77,38,130,0.16);
+    animation: cardEnter 0.7s ease;
+}
+
+@keyframes cardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-card .brand {
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+
+.auth-card h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 26px;
+    color: #35204F;
+    margin-bottom: 8px;
+}
+
+.auth-card p {
+    color: #9182A4;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.auth-card form {
+    text-align: left;
+    margin-top: 28px;
+}
+
+.auth-card label {
+    display: block;
+    margin-top: 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #55416D;
+}
+
+.auth-card input {
+    padding: 15px;
+    border: 1px solid #E7DDF5;
+    border-radius: 12px;
+    background: #FBF9FF;
+}
+
+.auth-card input:focus {
+    border-color: #9564E8;
+    box-shadow: 0 0 0 4px rgba(149,100,232,0.12);
+}
+
+.auth-card button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(110deg, #7040C3, #A477ED);
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 12px;
+    box-shadow: 0 9px 20px rgba(112,64,195,0.22);
+}
+
+.auth-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(112,64,195,0.3);
+}
+
+.auth-card a {
+    color: #8050D9;
+    font-weight: 800;
+}
+
+#authMessage {
+    font-weight: 600;
+    min-height: 18px;
+}
+
+@media(max-width: 480px) {
+    .auth-card {
+        padding: 35px 23px;
+    }
+}
